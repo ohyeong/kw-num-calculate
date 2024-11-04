@@ -12,7 +12,9 @@ function prime(num) {   // 소수 판별
 }
 
 function factorial(num) {
-    return -1;
+    if (num < 0 || num > 15) return -1;
+    if (num === 0) return 1;
+    return num * factorial(num - 1);
 }
 
 module.exports = {
