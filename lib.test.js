@@ -12,3 +12,7 @@ test("avg[-5, 5] should be 0", () => {
 test("prime[13] should be true", () => {
     expect(lib.prime([13])).toBe(true);
 });
+
+test("factorial[5] should be 120", () => {
+    expect(lib.factorial([5])).toBe(120);
+});
